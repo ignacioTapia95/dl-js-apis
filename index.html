@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conversor de Monedas</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <div class="converter-container">
+        <div class="header-title">
+            <h2>Conversor de monedas Nacional</h2>
+        </div>
+        <div>
+            <label for="currencyInput" class="form-label">Pesos CLP</label>
+            <input type="number" class="form-control" id="currencyInput" placeholder="Ingrese el monto en CLP">
+        </div>
+        <div>
+            <label for="currencySelect" class="form-label">Moneda a convertir:</label>
+            <select class="custom-select" id="currencySelect">
+                <option value="USD">Dólar Estadounidense (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+            </select>
+        </div>
+        <button id="search-button" type="button" class="btn btn-primary btn-block">Buscar</button>
+
+        <div id="result-section" class="output"></div>
+        <div id="price-evolution" class="graph-container"></div>
+    </div>
+    
+    <script src="assets/js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.7.12/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+body {
+    background-color: #f5f5f5;
+}
+.converter-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.header-title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.custom-select {
+    margin-bottom: 20px;
+}
+
+.output{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
