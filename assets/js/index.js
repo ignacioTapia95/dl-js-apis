@@ -1,7 +1,11 @@
 async function historicIndicator(indicatorName) {
-    const response = await fetch(`https://mindicador.cl/api/${indicatorName}`);
-    const data = await response.json();
-    return data;
+    try {
+      const response = await fetch(`https://mindicador.cl/api/${indicatorName}`);
+      const data = await response.json();
+      return data;
+    } catch (error) {
+        console.error('Fetch Error', error);
+    }
   }
 
 async function graphHistoricIndicator(indicatorName){
